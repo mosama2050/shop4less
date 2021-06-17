@@ -10,7 +10,7 @@ import {UpdateProductsComponent} from "./update-products/update-products.compone
 import {ViewAllProductsComponent} from "./view-all-products/view-all-products.component";
 
 const routes: Routes = [
-  { path: '', component: ProductsComponent },
+  { path: '', component: ViewAllProductsComponent },
   { path: 'create-products', component: CreateProductsComponent },
   { path: 'products/:id', component: ViewProductsComponent},
   { path: 'category/:id', component:  ViewAllProductsByCategoryComponent},
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'delete-product/:id', component:  DeleteProductsComponent},
   { path: 'update-product/:id', component: UpdateProductsComponent},
   { path: 'list-products', component: ViewAllProductsComponent},
-  { path: '**', component: ProductsComponent },
+  { path: '**', component: ViewAllProductsComponent },
 ];
 
 @NgModule({
