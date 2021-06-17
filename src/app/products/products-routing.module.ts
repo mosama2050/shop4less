@@ -7,6 +7,7 @@ import {ViewProductsComponent} from "./view-products/view-products.component";
 import {ViewAllProductsByCategoryComponent} from "./view-all-products-by-category/view-all-products-by-category.component";
 import {ViewAllProductsByDateComponent} from "./view-all-products-by-date/view-all-products-by-date.component";
 import {UpdateProductsComponent} from "./update-products/update-products.component";
+import {ViewAllProductsComponent} from "./view-all-products/view-all-products.component";
 
 const routes: Routes = [
   { path: '', component: ProductsComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'category/:id', component:  ViewAllProductsByCategoryComponent},
   { path: 'search', component: ViewAllProductsByDateComponent},
   { path: 'delete-product/:id', component:  DeleteProductsComponent},
-  { path: 'update-product/:id', component: UpdateProductsComponent}
+  { path: 'update-product/:id', component: UpdateProductsComponent},
+  { path: 'list-products', component: ViewAllProductsComponent},
   { path: '**', component: ProductsComponent },
 ];
 
