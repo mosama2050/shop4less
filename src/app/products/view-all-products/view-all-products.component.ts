@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Product} from "../product";
+import {ProductsService} from "../products.service";
 
 @Component({
   selector: 'app-view-all-products',
@@ -6,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-all-products.component.css']
 })
 export class ViewAllProductsComponent implements OnInit {
-  products: any;
 
-  constructor() { }
+
+
+  products: Product[] | undefined;
+  constructor(private productsService : ProductsService) { }
 
   ngOnInit(): void {
+    this.productsService.findAll().subscribe(data =>{
+      this.products = data;
+    });
   }
 
 }

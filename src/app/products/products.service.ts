@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Product} from "./product";
+import {Category} from "../site-fromework/category";
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class ProductsService {
   private productUrl: string;
 
   constructor(private httpClient: HttpClient){
-    this.productUrl = 'http://localhost:8080/products';
+    this.productUrl = 'http://localhost:3000/products';
   }
 
 
@@ -39,7 +40,11 @@ export class ProductsService {
   public  searchDateProducts(dateprams: any){
     return  this.httpClient.get(this.productUrl+'/category/'+dateprams);
   }
-  // public findAll(): Observable<Product[]>{
-  //   return this.httpClient.get<Product[]>(this.productUrl);
-  // }
+  public findAll(): Observable<Product[]>{
+    return this.httpClient.get<Product[]>(this.productUrl);
+  }
+
+  getallcategory(){
+    return  this.httpClient.get<Category[]>('http://localhost:3000/categories');
+  }
 }

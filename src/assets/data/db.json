@@ -77,51 +77,8 @@
       "reviews": 180,
       "vendor_name": "Seller -3",
       "warranty": 2
-    },
-    {
-      "id": 10,
-      "categoryId": "1",
-      "productName": "polo",
-      "description": "good",
-      "price": "855",
-      "is_available": 1,
-      "rating": "2",
-      "reviews": "4",
-      "color": "yellow"
-    },
-    {
-      "id": 7,
-      "categoryId": "3",
-      "productName": "warm Tshirt",
-      "description": "scdsc",
-      "price": "799",
-      "is_available": 1,
-      "rating": "3",
-      "reviews": "2",
-      "color": "yellow"
-    },
-    {
-      "id": 11,
-      "categoryId": "4",
-      "productName": "paryt ",
-      "description": "very good ..",
-      "price": "849",
-      "is_available": 1,
-      "rating": "2",
-      "reviews": "3",
-      "color": "white"
-    },
-    {
-      "id": 15,
-      "categoryId": "5",
-      "productName": "saucer Tshirt",
-      "description": "Qulaity so good",
-      "price": "599",
-      "is_available": 1,
-      "rating": "3",
-      "reviews": "4",
-      "color": "white"
     }
+
   ],
   "categories": [
     {

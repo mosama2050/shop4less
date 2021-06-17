@@ -1,9 +1,7 @@
 
 
-<div class="list-group"   >
-  <a href="products/category/" class="list-group-item" >"categoryName  " </a>
-  <a href="products/category/" class="list-group-item" >"categoryName  " </a>
-  <a href="products/category/" class="list-group-item" >"categoryName  " </a>
-  <a href="products/category/" class="list-group-item" >"categoryName  " </a>
+<div class="list-group"   *ngFor="let cat of categories" >
+  <a  class="list-group-item  alert-link"  style="color: blue">{{cat.categoryName}} </a>
+
 
 </div>

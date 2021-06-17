@@ -8,6 +8,7 @@ import {ViewAllProductsByCategoryComponent} from "./view-all-products-by-categor
 import {ViewAllProductsByDateComponent} from "./view-all-products-by-date/view-all-products-by-date.component";
 import {UpdateProductsComponent} from "./update-products/update-products.component";
 import {ViewAllProductsComponent} from "./view-all-products/view-all-products.component";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: ViewAllProductsComponent },
@@ -22,7 +23,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+  HttpClientModule
+  ],
   exports: [RouterModule]
 })
 export class ProductsRoutingModule { }
