@@ -1,4 +1,4 @@
-<div class="card mt-4 xx">
+  <div class="card mt-4 xx">
   <img class="card-img-top img-fluid" src="{{product.product_img}}" alt="">
   <div class="card-body">
     <h3 class="card-title">{{product.productName}} </h3>
@@ -10,9 +10,21 @@
     <span class="text-warning"> {{product.rating}}</span>
 
   </div>
+
+
+  <div   >
+
+    <button class="bg-success float-start bb"     routerLink="/products">back</button>
+
+    <button class="bg-danger float-end bb"    routerLink="/products/delete/{{productId}}">delete</button>
+    <button class="bg-warning float-lg-end bb"  routerLink="/products/update/{{productId}}">update</button>
+  </div>
+
+
+
 </div>
 
 
-<br>
 
-<button class="bg-primary "  style="border-radius: 30px " routerLink="/products">back</button>
+
+

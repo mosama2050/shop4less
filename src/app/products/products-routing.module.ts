@@ -12,12 +12,12 @@ import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: ViewAllProductsComponent },
-  { path: 'create-products', component: CreateProductsComponent },
-  { path: 'products/:id', component: ViewProductsComponent},
+  { path: 'create', component: CreateProductsComponent },
+  { path: 'product/:id', component: ViewProductsComponent},
   { path: 'category/:id', component:  ViewAllProductsByCategoryComponent},
   { path: 'search', component: ViewAllProductsByDateComponent},
-  { path: 'delete-product/:id', component:  DeleteProductsComponent},
-  { path: 'update-product/:id', component: UpdateProductsComponent},
+  { path: 'delete/:id', component:  DeleteProductsComponent},
+  { path: 'update/:id', component: UpdateProductsComponent},
   { path: 'list-products', component: ViewAllProductsComponent},
   { path: '**', component: ViewAllProductsComponent },
 ];

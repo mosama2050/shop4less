@@ -1,7 +1,7 @@
 
 
 <div class="list-group"   *ngFor="let cat of categories" >
-  <a  class="list-group-item  alert-link"  style="color: blue">{{cat.categoryName}} </a>
+  <a  class="list-group-item  alert-link" routerLink="products/category/{{cat.id}}" style="color: blue">{{cat.categoryName}} </a>
 
 
 </div>

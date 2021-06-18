@@ -4,24 +4,25 @@
 
 <div class="row">
 
-  <div class="col-lg-4 col-md-6 mb-4">
+  <div class="col-lg-4 col-md-6 mb-4" *ngFor="let pro of products">
     <div class="card h-100">
-      <a href="#"><img class="card-img-top" src="product.image}}" alt=""></a>
+      <a href="#"><img class="card-img-top" src="{{pro.product_img}}" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a routerLink="products/ {{productId}}">
-            product.productName}}
+          <a routerLink="/products/product/{{pro.id}}">
+            {{pro.productName}}
           </a>
         </h4>
-        <h5>$ product.price}}</h5>
-        <p class="card-text"> product.description}}
+        <h5>${{pro.price}}</h5>
+        <p class="card-text">{{pro.description}}
         </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"> product.rating}} Stars</small>
+        <small class="text-muted">{{pro.rating}} Stars</small>
       </div>
     </div>
   </div>
+
 
 
 

@@ -33,8 +33,8 @@ export class ProductsService {
     return  this.httpClient.delete<Product>(this.productUrl+'/'+productID);
   }
 
-  public  searchCategoryProducts(categoryId: any):Observable<Product>{
-    return  this.httpClient.get<Product>(this.productUrl+'/category/'+categoryId);
+  public  searchCategoryProducts(categoryId: any):Observable<Product[]>{
+    return  this.httpClient.get<Product[]>(this.productUrl+'?categoryId='+categoryId);
   }
 
   public  searchDateProducts(dateprams: any){
