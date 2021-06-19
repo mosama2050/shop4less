@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductsService} from "../products.service";
+import {Product} from "../product";
 
 @Component({
   selector: 'app-create-products',
@@ -12,22 +13,29 @@ export class CreateProductsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-//  addNewProduct(form) {
-// //   let newProduct = {
-// //     id: 15,
-// //     categoryId: form.product_category,
-// //     productName: form.product_name,
-// //     description: form.product_description,
-// //     price: form.product_price,
-// //     is_available: 1,
-// //     rating: form.product_rating,
-// //     reviews: form.product_reviews,
-// //     color: form.product_color
-// //
-// // };
-//  this.productsService.createproduct(newProduct).subscribe(data =>
-//   {
-//     console.log(data);
-//   });
-// }
+
+  // @ts-ignore
+  addNewProduct(form){
+   const product: Product =<Product><unknown>{
+     id: 13,
+     categoryId: form.value.product_category,
+     productName: form.value.product_name,
+     description: form.value.product_description,
+     rating: form.value.product_rating,
+     price: form.value.product_price,
+     product_img: 'http://localhost:4200/assets/z.png',
+     isAvailable: 1,
+     color: form.value.product_color,
+     reviews: form.value.product_reviews
+   }
+
+
+
+    console.log(product);
+
+    this.productsService.createproduct(product).subscribe(data =>{
+      console.log(data);
+    });
+  }
+
 }

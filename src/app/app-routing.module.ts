@@ -7,7 +7,8 @@ import {ViewAllProductsComponent} from "./products/view-all-products/view-all-pr
 const routes: Routes = [
   { path: '', component:ViewAllProductsComponent },
   { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
-  { path: 'orders', component: ListOrdersComponent }
+  { path: 'orders', component: ListOrdersComponent },
+  { path: '**', component: ViewAllProductsComponent }
 
 
 ];

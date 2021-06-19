@@ -77,8 +77,31 @@
       "reviews": 180,
       "vendor_name": "Seller -3",
       "warranty": 2
+    },
+    {
+      "id": 12,
+      "categoryId": "1",
+      "productName": "Test 11",
+      "description": "blblblblblblblbaaaa",
+      "rating": "4",
+      "price": "140",
+      "product_img": "http://localhost:4200/assets/z.png",
+      "is_available": "Yes",
+      "color": "red",
+      "reviews": "4"
+    },
+    {
+      "id": 13,
+      "categoryId": "1",
+      "productName": "Test2",
+      "description": "sssssssssss",
+      "rating": "1",
+      "price": "1111111111",
+      "product_img": "http://localhost:4200/assets/z.png",
+      "isAvailable": 1,
+      "color": "blue",
+      "reviews": "4"
     }
-
   ],
   "categories": [
     {
